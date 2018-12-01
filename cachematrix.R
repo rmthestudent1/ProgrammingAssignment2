@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
   setimat <- function(invmat) im <<- invmat
   ##function: puts the values of im in im (local env)
   getimat <- function() im
-  ##checks if matrices are similar. four main matrices now 
+  ##checks if matrices are similar. four main values now 
   ##   1. inputted values (x) in cache, 2. inputted values (x) in loc env,
   ##   3. invmat (im) in cache, 4. invmat (im) in loc env.
   list(set = set, get = get,setimat = setimat,getimat = getimat)
