@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
   }
   ## else? solves it
   data <- x$get()
-  im <- invmat(data, ...)
+  im <- solve(data, ...)
   x$setimat(im)
   im
 }
