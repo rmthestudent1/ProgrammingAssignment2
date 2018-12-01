@@ -22,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get,setimat = setimat,getimat = getimat)
 }
 
-#MAIN FUNC TWO: Solves for the inverse matrix if data is not in the cache
+#MAIN FUNC TWO: Retrieves inverse matrix if it's in the cache
+#               Solves for the inverse matrix if it's not
 
 cacheSolve <- function(x, ...) {
   ##retrieves the computed inverse matrices for x, puts it in im
