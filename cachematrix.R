@@ -31,7 +31,7 @@ cacheSolve <- function(x, ...) {
   ##if im is not empty, meaning it's already been computed, 
   ##     system gets im from cache
   if(!is.null(im)) {
-    message("getting cached data")
+    message("Getting cached inverse matrix.")
     return(im)
   }
   ## else? solves it
